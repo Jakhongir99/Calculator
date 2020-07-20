@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Awesome Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <input type="textview" name="textview" id="inputval" />
+      </form>
+      <table>
+        <tr>
+          <td>
+            <input type="button" value="C" onclick="ResetHandler()" />
+          </td>
+          <td><input type="button" value="<" onclick="RemoveHandler()" /></td>
+          <td>
+            <input type="button" value="%" onclick="SpecialHandler('%')" />
+          </td>
+          <td>
+            <input type="button" value="/" onclick="SpecialHandler('/')" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="7" onclick="NumberHandler(7)" />
+          </td>
+          <td>
+            <input type="button" value="8" onclick="NumberHandler(8)" />
+          </td>
+          <td>
+            <input type="button" value="9" onclick="NumberHandler(9)" />
+          </td>
+          <td>
+            <input type="button" value="*" onclick="SpecialHandler('*')" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="4" onclick="NumberHandler(4)" />
+          </td>
+          <td>
+            <input type="button" value="5" onclick="NumberHandler(5)" />
+          </td>
+          <td>
+            <input type="button" value="6" onclick="NumberHandler(6)" />
+          </td>
+          <td>
+            <input type="button" value="-" onclick="NumberHandler('-')" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input type="button" value="1" onclick="NumberHandler(1)" />
+          </td>
+          <td>
+            <input type="button" value="2" onclick="NumberHandler(2)" />
+          </td>
+          <td>
+            <input type="button" value="3" onclick="NumberHandler(3)" />
+          </td>
+          <td>
+            <input type="button" value="+" onclick="NumberHandler('+')" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input
+              type="button"
+              value="0"
+              style="width: 100%;"
+              onclick="NumberHandler(0)"
+            />
+          </td>
+          <td>
+            <input type="button" value="." onclick="SpecialHandler('.')" />
+          </td>
+          <td><input type="button" value="=" onclick="EqualHandler()" /></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
